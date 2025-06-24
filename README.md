@@ -104,3 +104,26 @@ All user input will be validated and sanitized to prevent injection attacks (e.g
 All API traffic will be secured via HTTPS.  
 **Why it's crucial:** Protects sensitive data (e.g., login credentials) during transmission.
 
+
+## 🚀 CI/CD Pipeline
+
+### What is CI/CD?
+
+CI/CD stands for **Continuous Integration** and **Continuous Deployment**. It is a development practice that automates the process of testing, building, and deploying code changes. CI ensures that changes are automatically tested and integrated into the main branch, while CD automates the release of updates to production or staging environments.
+
+### Why It's Important
+
+- **Improves Code Quality:** Automated testing helps catch bugs early in the development cycle.
+- **Faster Releases:** Reduces manual steps and accelerates feature delivery.
+- **Consistency:** Ensures reliable and repeatable builds and deployments.
+- **Collaboration:** Encourages frequent commits and better team workflows.
+
+### Tools We May Use
+
+- **GitHub Actions:** For automating workflows, tests, and deployments.
+- **Docker:** For containerizing the application and ensuring consistent environments.
+- **Docker Hub:** For storing and sharing Docker images.
+- **Heroku / Render / AWS / Azure:** For deploying the application.
+- **Linting & Testing Tools:** To enforce code quality and standards.
+
+
