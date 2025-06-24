@@ -22,13 +22,13 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
 ## Database Design
 - Users
   
-  -Key Fields:
+  - Key Fields:
     -user_id (unique identifier)
     - name
     - email
 - Properties
   
-  -Important Fields:
+  - Important Fields:
     - property_id (unique_identifier)
     - owner_id (foreign key to users)
     - location
@@ -37,7 +37,7 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
 
 - Bookings
   
-  -Important Fields:
+  - Important Fields:
     - booking_id (unique identifier)
     - user_id (who booked - guest)
     - property_id (what's being booked)
@@ -47,7 +47,7 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
 
 - Payments
   
-  -Important Fields:
+  - Important Fields:
     - payment_id(unique identifier)
     - booking_id (foreign key to bookings)
     - amount
