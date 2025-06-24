@@ -79,3 +79,28 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
     - Indexing: Implement indexes for fast retrieval of frequently accessed data.
     - Caching: Use caching strategies to reduce database load and improve performance.
 
+
+## 🔐 API Security
+
+To ensure the safety and integrity of the application, the following key security measures will be implemented:
+
+### 1. Authentication
+Secure login mechanisms (e.g., JWT or OAuth2) will be used to verify user identity before granting access to protected endpoints.  
+**Why it's crucial:** Prevents unauthorized access and protects user accounts.
+
+### 2. Authorization
+Role-based access control (RBAC) will restrict actions based on user roles (e.g., host vs. guest).  
+**Why it's crucial:** Ensures users only perform actions they’re permitted to—protects data and system integrity.
+
+### 3. Rate Limiting
+Limits the number of requests per user/IP over time using tools like Flask-Limiter or Nginx configs.  
+**Why it's crucial:** Prevents abuse, brute-force attacks, and reduces server load.
+
+### 4. Input Validation & Sanitization
+All user input will be validated and sanitized to prevent injection attacks (e.g., SQL injection, XSS).  
+**Why it's crucial:** Secures the backend from malicious payloads and ensures data integrity.
+
+### 5. HTTPS Enforcement
+All API traffic will be secured via HTTPS.  
+**Why it's crucial:** Protects sensitive data (e.g., login credentials) during transmission.
+
