@@ -21,7 +21,31 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
 
 ## Database Design
 - Users
+  -Key Fields:
+    -user_id (unique identifier)
+    - name
+    - email
 - Properties
+  -Important Fields:
+    - property_id (unique_identifier)
+    - owner_id (foreign key to users)
+    - location
+  - Relationship:
+    Each Property is owned by one User (typically the host). One user can own many properties (One-to-Many).
+
 - Bookings
-- Reviews
+  -Important Fields:
+    - booking_id (unique identifier)
+    - user_id (who booked - guest)
+    - property_id (what's being booked)'
+  - Relationship:
+    Each Booking links one User (guest) to one Property. Properties can have many bookings, and users can make many bookings (Many-to-Many, often modeled through this separate entity).
+
 - Payments
+  -Important Fields:
+    - payment_id(unique identifier)
+    - booking_id (foreign key to bookings)
+    - amount
+  - Relationship:
+    Each Payment is tied to one Booking. A booking may have one or more payments (e.g., deposit and final payment), depending on your business rules
+
