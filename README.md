@@ -54,3 +54,28 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
   - Relationship:
     Each Payment is tied to one Booking. A booking may have one or more payments (e.g., deposit and final payment), depending on your business rules
 
+##  Feature Breakdown
+- Main Features:
+  - API Documentation
+    - OpenAPI Standard: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration.
+    - Django REST Framework: Provides a comprehensive RESTful API for handling CRUD operations on user and property data.
+    - GraphQL: Offers a flexible and efficient query mechanism for interacting with the backend.
+  - User Authentication
+    - Endpoints: /users/, /users/{user_id}/
+    - Features: Register new users, authenticate, and manage user profiles.
+  - Property Management
+    - Endpoints: /properties/, /properties/{property_id}/
+    - Features: Create, update, retrieve, and delete property listings.
+  - Booking System
+    - Endpoints: /bookings/, /bookings/{booking_id}/
+    - Features: Make, update, and manage bookings, including check-in and check-out details.
+  - Payment Processing
+    - Endpoints: /payments/
+    - Features: Handle payment transactions related to bookings.
+  -  Review System
+    - Endpoints: /reviews/, /reviews/{review_id}/
+    - Features: Post and manage reviews for properties.
+  -  Database Optimizations
+      - Indexing: Implement indexes for fast retrieval of frequently accessed data.
+      - Caching: Use caching strategies to reduce database load and improve performance.
+
